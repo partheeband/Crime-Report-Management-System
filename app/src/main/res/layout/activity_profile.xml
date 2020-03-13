@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+<RelativeLayout
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="#039BE5">
+    <TextView
+        android:id="@+id/AddCriminalDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:drawableLeft="@drawable/baseline_account_box_black_18dp"
+        android:layout_centerHorizontal="true"
+        android:text="PROFILE INFORMATION"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="#43A047"
+        android:text="Save"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/proName"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout" />
+
+    <EditText
+        android:id="@+id/proMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Mobile No."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proName" />
+
+    <EditText
+        android:id="@+id/proAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proMobile" />
+
+    <EditText
+        android:id="@+id/proEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proAge" />
+
+    <EditText
+        android:id="@+id/proCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="City"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proEmail" />
+
+    <EditText
+        android:id="@+id/proCountry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Country"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proCity" />
+
+    <EditText
+        android:id="@+id/ph1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Country"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proCountry" />
+
+    <EditText
+        android:id="@+id/ph2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Country"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ph1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

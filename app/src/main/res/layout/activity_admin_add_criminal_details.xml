@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddCriminalDetailsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#039BE5">
+
+        <TextView
+            android:id="@+id/AddCriminalDetailsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/baseline_account_box_black_18dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Add Criminal Details"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextName"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number"
+                android:textAlignment="center" />
+            <EditText
+                android:id="@+id/editTextCriminalIdentificationMark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextAge"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Criminal Identification Mark"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+            <EditText
+                android:id="@+id/editTextCriminalId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCriminalIdentificationMark"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Criminal Id"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextCrimeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCriminalId"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Crime Type"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+            <RelativeLayout
+                android:id="@+id/relativelayoutRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editTextCrimeType"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_rectangle_border"
+                android:padding="10dp">
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/textViewCrimeRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_centerHorizontal="true"
+                    android:text="CrimeRating"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editTextArrestedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayoutRatingBar"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Arrested Date"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextImprisionYears"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextArrestedDate"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Imprisioned Years"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextprisonCellId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextImprisionYears"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Prison Cell Id"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editTextprisonCellId"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:background="#43A047"
+                android:text="Add Criminal Details"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <!--    <EditText-->
+<!--        android:id="@+id/ph1"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="Country"-->
+<!--        android:textAlignment="center" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/ph2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="Country"-->
+<!--        android:textAlignment="center" />-->
+</RelativeLayout>

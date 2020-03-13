@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="3dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:id="@+id/imageViewGender"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_male_red" />
+
+            <TextView
+                android:id="@+id/textView_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:text="Name :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_Name"
+                android:text="Abcdef" />
+
+            <TextView
+                android:id="@+id/textView_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_Name"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:text="Age :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_age"
+                android:text="0" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayoutCriminalIdentificationMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_age"
+                android:layout_toEndOf="@+id/imageViewGender">
+            <TextView
+                android:id="@+id/textView_criminalIdentificationMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Identification Mark:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCriminalIdentificationMark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_criminalIdentificationMark"
+                android:text="Mole on finger" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView_criminalId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayoutCriminalIdentificationMark"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:text="Id:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCriminalId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayoutCriminalIdentificationMark"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_criminalId"
+                android:text="104" />
+
+            <TextView
+                android:id="@+id/textView_crimeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_criminalId"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:text="Crime Type:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCrimeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_criminalId"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_crimeType"
+                android:text="Type" />
+
+            <TextView
+                android:id="@+id/textView_arrestedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_crimeType"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:text="Date of Arrest:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewArrestedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_crimeType"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_arrestedDate"
+                android:text="dd/mm/yyyy" />
+            <TextView
+                android:id="@+id/textView_imprisonedYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_arrestedDate"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:text="Imprisoned Years:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewImprisonedYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_arrestedDate"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_imprisonedYear"
+                android:text="n" />
+            <TextView
+                android:id="@+id/textView_prisonCellId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_imprisonedYear"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:text="Prison Cell Id :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPrisonCellId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_imprisonedYear"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/textView_prisonCellId"
+                android:text="146" />
+            <RelativeLayout
+                android:id="@+id/relativelayoutRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView_prisonCellId"
+                android:layout_toEndOf="@+id/imageViewGender"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_rectangle_border"
+                android:padding="10dp">
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressTint="@color/colorPrimary"
+                    android:isIndicator="true"/>
+                <TextView
+                    android:id="@+id/textViewCrimeRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_centerHorizontal="true"
+                    android:text="Crime Rating"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

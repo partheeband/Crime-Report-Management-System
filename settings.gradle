@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Crime-Report-Management-System-Miniproject'

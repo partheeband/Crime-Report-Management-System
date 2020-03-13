@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    tools:context=".PostActivity">
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Report A Crime"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_below="@+id/textViewtitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+
+                android:id="@+id/imageSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/add_btn" />
+
+            <EditText
+                android:id="@+id/titleSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageSelect"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_outline"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/descSelect"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/titleSelect"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_outline"
+                android:hint="Description"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:id="@+id/textViewName_latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latitude" />
+
+                <TextView
+                    android:id="@+id/latSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:text="0" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textViewName_Longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitude" />
+
+            <TextView
+                android:id="@+id/lngSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="0" />
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/mapbutt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3949AB"
+                android:text="Get Location" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:prompt="@string/country_prompt" />
+
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lngSelect"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorPrimary"
+                android:text="submit report"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
